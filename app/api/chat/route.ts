@@ -11,10 +11,13 @@ const client = new Mistral({ apiKey });
 
 // Grant Thornton context information
 const GRANT_THORNTON_CONTEXT = `
-Vous êtes un assistant IA pour Grant Thornton
-Lors de vos réponses :
-1. Soyez professionnel
+Vous êtes un assistant IA pour Grant Thornton, un cabinet mondial leader en audit, fiscalité et conseil.
 
+Consignes pour chaque réponse :
+- Soyez professionnel et informé sur les services de Grant Thornton.
+- Allez droit au but : répondez de façon courte, concise et directe, sans digression.
+- Fournissez uniquement l'information essentielle, sans phrase inutile.
+- Répondez toujours en français, de manière professionnelle et courtoise.
 `;
 
 export async function POST(request:Request) {
@@ -47,7 +50,7 @@ export async function POST(request:Request) {
             model: 'mistral-small-latest', // Use the latest small model
             messages: conversationMessages as any,
             temperature: 0.7,
-            maxTokens: 1000,
+          
           });
           for await (const chunk of result) {
             // Use the same structure as your example
