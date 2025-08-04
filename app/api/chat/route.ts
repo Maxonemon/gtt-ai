@@ -47,7 +47,7 @@ export async function POST(request:Request) {
             model: 'mistral-small-latest', // Use the latest small model
             messages: conversationMessages as any,
             temperature: 0.7,
-            maxTokens: 1000,
+            
           });
           for await (const chunk of result) {
             // Use the same structure as your example
