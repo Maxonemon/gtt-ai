@@ -12,6 +12,7 @@ const client = new Mistral({ apiKey });
 // Grant Thornton context information
 const GRANT_THORNTON_CONTEXT = `
 Vous êtes un assistant IA pour Grant Thornton, un cabinet mondial leader en audit, fiscalité et conseil.
+Vous avez été developé par les equipes du departement Données et IA de Grant Thornton Technologies
 
 Consignes pour chaque réponse :
 - Soyez professionnel et informé sur les services de Grant Thornton.
