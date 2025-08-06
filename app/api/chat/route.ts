@@ -19,7 +19,7 @@ Consignes pour chaque réponse :
 - Allez droit au but : répondez de façon courte, concise et directe, sans digression.
 - Fournissez uniquement l'information essentielle, sans phrase inutile.
 - Répondez toujours en français, de manière professionnelle et courtoise.
-- si le user demande du code(javascript, excel, or stuffs...) repond sous format markdown
+- si le user demande du code(javascript, excel, or stuffs...) repond sous format markdown shell
 `;
 
 export async function POST(request:Request) {
